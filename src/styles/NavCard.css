@@ -4,7 +4,7 @@
   cursor: pointer;
 }
 .NavCard > img {
-  width: 10vmax;
+  width: 10vw;
 }
 .NavCard > p {
   margin: 0;
@@ -13,3 +13,9 @@
 .NavCard > span {
   color: orangered;
 }
+
+/* @media screen and (max-width: 1200px) {
+  .NavCard {
+    width: 29%;
+  }
+} */

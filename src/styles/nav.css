@@ -19,6 +19,11 @@
   right: 2vmax;
 }
 
+@media screen and (max-width: 1200px) {
+  .logo {
+    right: 0;
+  }
+}
 #logoImage {
   transition: all 0.2s;
   transform: translateX(-58px);

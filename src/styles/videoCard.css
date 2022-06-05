@@ -1,6 +1,6 @@
 .videoCard {
   width: 30vmax;
-  height: 48vh;
+  height: 28vw;
   display: flex;
   flex-direction: column;
   justify-content: center;

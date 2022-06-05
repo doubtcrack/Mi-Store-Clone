@@ -6,6 +6,12 @@
   color: rgb(197, 197, 197);
 }
 
+@media screen and (max-width: 900px) {
+  .footer {
+    grid-template-columns: 2fr 2fr 2fr;
+  }
+}
+
 .footer > div {
   margin: 1vmax;
   display: flex;
@@ -59,7 +65,7 @@
 .footerBorder > div {
   border-top: 1px solid rgba(197, 197, 197, 0.185);
   color: rgb(197, 197, 197);
-  width: 90vmax;
+  width: 90vw;
   margin: auto;
   padding: 2vmax;
   font-size: 0.98vmax;

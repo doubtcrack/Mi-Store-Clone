@@ -4,7 +4,7 @@ import "../styles/StarProduct.css";
 const StarProduct = ({ starProduct }) => {
   return (
     <div className="starProduct">
-      <div>
+      <div className="big-image">
         <a href={starProduct[0].url}>
           <img src={starProduct[0].image} alt="1st Product" />
         </a>

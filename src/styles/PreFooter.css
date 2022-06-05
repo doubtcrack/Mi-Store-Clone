@@ -33,9 +33,11 @@
   display: grid;
   height: 150px;
   grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
 }
 
 .PreFooter2 > div {
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,7 +63,6 @@
   padding: 0.5vmax 1vmax;
   background-color: rgb(255, 255, 255);
   font-size: 1vmax;
-
   width: 20.4vmax;
 }
 .PreFooter2 > div > div > button {
@@ -100,4 +101,30 @@
 }
 .PreFooter2 > div:nth-child(4) > svg:hover {
   fill: rgb(94, 94, 94);
+}
+
+@media screen and (max-width: 1200px) {
+  * {
+    font-size: 10px;
+  }
+  .PreFooter2 {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .PreFooter2 > div {
+    margin-bottom: 20px;
+  }
+  .PreFooter2 > div {
+    align-items: flex-start;
+    justify-content: start;
+  }
+  .PreFooter2 > div:nth-child(3) {
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 400px) {
+  .PreFooter2 > div {
+    padding: 0;
+  }
 }

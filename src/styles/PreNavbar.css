@@ -11,6 +11,11 @@
   align-items: center;
 }
 
+@media screen and (max-width: 600px) {
+  .preNav > div {
+    padding: 0;
+  }
+}
 .preNav > div > span {
   color: rgba(180, 180, 180, 0.644);
   font-size: 0.8vmax;

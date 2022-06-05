@@ -4,3 +4,6 @@
   margin: auto;
   justify-content: center;
 }
+.ProductReviews img {
+  height: 15vw;
+}

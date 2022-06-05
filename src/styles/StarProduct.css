@@ -13,6 +13,11 @@
 
 .starProduct img {
   transition: all 0.5s;
+  height: 21vw;
+}
+
+.big-image img {
+  height: 42vw;
 }
 
 .starProduct img:hover {

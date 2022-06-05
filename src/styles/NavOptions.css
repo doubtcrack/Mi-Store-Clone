@@ -5,3 +5,9 @@
   padding: 2vmax;
   z-index: 1000;
 }
+
+@media screen and (max-width: 1200px) {
+  .navOptions {
+    font-size: 10px;
+  }
+}

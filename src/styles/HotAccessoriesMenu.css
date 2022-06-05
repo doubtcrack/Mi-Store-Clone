@@ -16,3 +16,14 @@
   color: orangered;
   border-bottom: 1px solid orangered;
 }
+
+@media screen and (max-width: 800px) {
+  .HotAccessoriesMenu {
+    margin-bottom: 10px;
+  }
+  .HotAccessoriesLink {
+    font-size: 10px;
+    padding: 0 5px;
+    margin: 0;
+  }
+}

@@ -8,6 +8,7 @@
 .offersSection img {
   margin: 0 1vmax;
   transition: all 0.5s;
+  height: 15vw;
 }
 
 .offersSection img:hover {
