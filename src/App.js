@@ -19,17 +19,43 @@ function App() {
   return (
     <Router>
       <PreNavbar />
-      <Navbar />
-      <NavOptions
-        miPhones={data.miPhones}
-        redmiPhones={data.redmiPhones}
-        tv={data.tv}
-        laptop={data.laptop}
-        fitnessAndLifeStyle={data.fitnessAndLifeStyle}
-        home={data.home}
-        audio={data.audio}
-        accessories={data.accessories}
-      />
+      <Navbar logo={data.logo} />
+      <Routes>
+        <Route
+          exact
+          path="/miphones"
+          element={<NavOptions miPhones={data.miPhones} />}
+        />
+        <Route
+          exact
+          path="/redmiphones"
+          element={<NavOptions redmiPhones={data.redmiPhones} />}
+        />
+        <Route exact path="/tv" element={<NavOptions tv={data.tv} />} />
+        <Route
+          exact
+          path="/laptop"
+          element={<NavOptions laptop={data.laptop} />}
+        />
+        <Route
+          exact
+          path="/lifeStyle"
+          element={
+            <NavOptions fitnessAndLifeStyle={data.fitnessAndLifeStyle} />
+          }
+        />
+        <Route exact path="/home" element={<NavOptions home={data.home} />} />
+        <Route
+          exact
+          path="/audio"
+          element={<NavOptions audio={data.audio} />}
+        />
+        <Route
+          exact
+          path="/accessories"
+          element={<NavOptions accessories={data.accessories} />}
+        />
+      </Routes>
       <Slider start={data.banner.start} />
       <Offers offer={data.offer} />
       <Heading text="STAR PRODUCTS" />
@@ -39,7 +65,7 @@ function App() {
       <Routes>
         <Route
           exact
-          path="/music"
+          path="/Music"
           element={
             <HotAccessories
               music={data.hotAccessories.music}
@@ -50,7 +76,7 @@ function App() {
 
         <Route
           exact
-          path="/smartDevice"
+          path="/SmartDevice"
           element={
             <HotAccessories
               smartDevice={data.hotAccessories.smartDevice}
@@ -61,7 +87,7 @@ function App() {
 
         <Route
           exact
-          path="/home"
+          path="/Home"
           element={
             <HotAccessories
               home={data.hotAccessories.home}
@@ -72,7 +98,7 @@ function App() {
 
         <Route
           exact
-          path="/lifestyle"
+          path="/Lifestyle"
           element={
             <HotAccessories
               lifeStyle={data.hotAccessories.lifeStyle}
@@ -83,7 +109,7 @@ function App() {
 
         <Route
           exact
-          path="/mobileAccessories"
+          path="/MobileAccessories"
           element={
             <HotAccessories
               mobileAccessories={data.hotAccessories.mobileAccessories}

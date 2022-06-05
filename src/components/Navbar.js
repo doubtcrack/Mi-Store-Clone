@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/nav.css";
-import data from "../data/data.json";
+import { Link } from "react-router-dom";
 
 const searchIcon = (
   <svg
@@ -15,38 +15,38 @@ const searchIcon = (
   </svg>
 );
 
-const Navbar = () => {
+const Navbar = ({ logo }) => {
   return (
     <div className="nav">
       <div className="logo">
-        <a href="/">
-          <img id="logoImage" src={data.logo} alt="Not" />
-        </a>
+        <Link to="/">
+          <img id="logoImage" src={logo} alt="Not" />
+        </Link>
       </div>
-      <a className="navlinks" href="/miphones">
+      <Link className="navlinks" to="/miphones">
         Mi Phones
-      </a>
-      <a className="navlinks" href="/redmiphones">
+      </Link>
+      <Link className="navlinks" to="/redmiphones">
         Redmi Phones
-      </a>
-      <a className="navlinks" href="/tv">
+      </Link>
+      <Link className="navlinks" to="/tv">
         TV
-      </a>
-      <a className="navlinks" href="/laptops">
+      </Link>
+      <Link className="navlinks" to="/laptop">
         Laptops
-      </a>
-      <a className="navlinks" href="/lifestyle">
+      </Link>
+      <Link className="navlinks" to="/lifestyle">
         Fitness & Lifestyle
-      </a>
-      <a className="navlinks" href="/home">
+      </Link>
+      <Link className="navlinks" to="/home">
         Home
-      </a>
-      <a className="navlinks" href="/audio">
+      </Link>
+      <Link className="navlinks" to="/audio">
         Radio
-      </a>
-      <a className="navlinks" href="/accessories">
+      </Link>
+      <Link className="navlinks" to="/accessories">
         Accessories
-      </a>
+      </Link>
       <div className="searchbox">
         <input type="text" name="search" placeholder="Search Products" />
         {searchIcon}

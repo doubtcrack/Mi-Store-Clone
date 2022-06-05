@@ -5,19 +5,19 @@ import "../styles/HotAccessoriesMenu.css";
 const HotAccessoriesMenu = () => {
   return (
     <div className="HotAccessoriesMenu">
-      <Link className="HotAccessoriesLink" to="/music">
+      <Link className="HotAccessoriesLink" to="/Music">
         Music Store
       </Link>
-      <Link className="HotAccessoriesLink" to="/smartDevice">
+      <Link className="HotAccessoriesLink" to="/SmartDevice">
         Smart Devices
       </Link>
-      <Link className="HotAccessoriesLink" to="/home">
+      <Link className="HotAccessoriesLink" to="/Home">
         Home
       </Link>
-      <Link className="HotAccessoriesLink" to="/lifestyle">
+      <Link className="HotAccessoriesLink" to="/Lifestyle">
         Lifestyle
       </Link>
-      <Link className="HotAccessoriesLink" to="/mobileAccessories">
+      <Link className="HotAccessoriesLink" to="/MobileAccessories">
         Mobile Accessories
       </Link>
     </div>
